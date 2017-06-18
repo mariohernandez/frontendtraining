@@ -484,6 +484,7 @@ h4 {
     .hero__text {
       top: 40%;
       left: 30%;
+      width: inherit;
       text-align: left;
       padding: 0 0 2rem 2rem;
       border-left: 2px solid #FFFFFF; } }
