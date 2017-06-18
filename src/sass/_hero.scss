@@ -1,0 +1,87 @@
+.hero {
+  position: relative;
+
+  &::before {
+    background: linear-gradient(to bottom, $color-black 0%, transparent 100%);
+    content: '';
+    display: block;
+    height: 75%;
+    opacity: 0.88;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.hero__text {
+  position: absolute;
+  z-index: $zi-medium;
+  top: 10%;
+  color: $color-white;
+  text-align: center;
+  width: 90%;
+  left: 5%;
+
+  @include breakpoint($bp-xsm) {
+    top: 30%;
+  }
+
+  @include breakpoint($bp-md) {
+    top: 40%;
+    left: 30%;
+    text-align: left;
+    padding: 0 0 2rem 2rem;
+    border-left: 2px solid $color-white;
+  }
+
+  @include breakpoint($bp-lg) {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.hero__heading {
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 6rem;
+  }
+}
+
+.hero__subheading {
+  font-size: 2rem;
+
+  @include breakpoint($bp-sm) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 2rem;
+  }
+}
+
+.hero__cta {
+  margin-top: 1rem;
+
+  @media screen and(max-width: $bp-xsm) {
+    .button {
+      padding: 0;
+      background: transparent;
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+
+  @include breakpoint($bp-xsm) {
+    margin-top: 3rem;
+  }
+
+  @include breakpoint($bp-sm) {
+    margin-top: 6rem;
+  }
+}

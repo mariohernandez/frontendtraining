@@ -453,3 +453,73 @@ h4 {
   @media (min-width: 40em) {
     h4 {
       font-size: 2.4rem; } }
+
+.hero {
+  position: relative; }
+  .hero::before {
+    background: linear-gradient(to bottom, #000000 0%, transparent 100%);
+    content: '';
+    display: block;
+    height: 75%;
+    opacity: 0.88;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10; }
+
+.hero__text {
+  position: absolute;
+  z-index: 30;
+  top: 10%;
+  color: #FFFFFF;
+  text-align: center;
+  width: 90%;
+  left: 5%; }
+  @media (min-width: 40em) {
+    .hero__text {
+      top: 30%; } }
+  @media (min-width: 64em) {
+    .hero__text {
+      top: 40%;
+      left: 30%;
+      text-align: left;
+      padding: 0 0 2rem 2rem;
+      border-left: 2px solid #FFFFFF; } }
+  @media (min-width: 75em) {
+    .hero__text {
+      top: 50%;
+      left: 50%; } }
+
+.hero__heading {
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.05rem; }
+  @media (min-width: 64em) {
+    .hero__heading {
+      font-size: 6rem; } }
+
+.hero__subheading {
+  font-size: 2rem; }
+  @media (min-width: 55em) {
+    .hero__subheading {
+      font-size: 3rem; } }
+  @media (min-width: 64em) {
+    .hero__subheading {
+      font-size: 2rem; } }
+
+.hero__cta {
+  margin-top: 1rem; }
+  @media screen and (max-width: 40em) {
+    .hero__cta .button {
+      padding: 0;
+      background: transparent;
+      color: #FFFFFF;
+      text-decoration: underline; } }
+  @media (min-width: 40em) {
+    .hero__cta {
+      margin-top: 3rem; } }
+  @media (min-width: 55em) {
+    .hero__cta {
+      margin-top: 6rem; } }
