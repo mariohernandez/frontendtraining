@@ -50,7 +50,7 @@ body {
   padding: 0;
   font-size: 1.8rem;
   letter-spacing: 0.02em;
-  color: #444;
+  color: $color-tundora;
   font-family: $font-primary;
 }
 
@@ -122,6 +122,7 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: $color-orange;
 
   /**
    * Remove the outline on focused links when they are also active or hovered
@@ -130,6 +131,7 @@ a {
   &:active,
   &:hover {
     outline-width: 0;
+    text-decoration: none;
   }
 }
 

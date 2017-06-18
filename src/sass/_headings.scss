@@ -43,22 +43,22 @@ h6 {
   line-height: 1.2;
   letter-spacing: 0.05rem;
   margin: 1rem 0;
+  font-family: $font-primary;
   font-weight: 300;
 }
 
-// h1 {
-//   @include font-size-heading1;
-// }
+h1 {
+  @include font-size-heading1;
+}
 
-// h2 {
-//   @include font-size-heading2;
-// }
+h2 {
+  @include font-size-heading2;
+}
 
-// h3 {
-//   @include font-size-heading3;
-// }
+h3 {
+  @include font-size-heading3;
+}
 
-// h4 {
-//   @include font-size-heading4;
-// }
-
+h4 {
+  @include font-size-heading4;
+}
