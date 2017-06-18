@@ -1,28 +1,24 @@
 .hero {
+  @include opacity-overlay(0.9, darken($color-blue, 25%));
+  background: url('../../dist/assets/code.jpg') 0 0 no-repeat;
+  bakcground-size: cover;
+  line-height: 0.8;
   position: relative;
+  min-height: 400px;
 
-  &::before {
-    background: linear-gradient(to bottom, $color-black 0%, transparent 100%);
-    content: '';
-    display: block;
-    height: 75%;
-    opacity: 0.88;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 10;
+  @include breakpoint($bp-md) {
+    min-height: 600px;
   }
 }
 
 .hero__text {
   position: absolute;
   z-index: $zi-medium;
-  top: 10%;
+  top: 25%;
   color: $color-white;
   text-align: center;
   left: 5%;
+  width: 90%;
 
   @include breakpoint($bp-xsm) {
     top: 30%;
@@ -30,22 +26,22 @@
 
   @include breakpoint($bp-md) {
     top: 40%;
-    left: 30%;
+    left: 10%;
+    width: 80%;
     text-align: left;
     padding: 0 0 2rem 2rem;
-    border-left: 2px solid $color-white;
-  }
-
-  @include breakpoint($bp-lg) {
-    top: 50%;
-    left: 50%;
   }
 }
 
 .hero__heading {
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: 300;
+  font-size: 3.5rem;
   letter-spacing: 0.05rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint($bp-sm) {
+    font-size: 4rem;
+  }
 
   @include breakpoint($bp-md) {
     font-size: 6rem;
@@ -54,14 +50,7 @@
 
 .hero__subheading {
   font-size: 2rem;
-
-  @include breakpoint($bp-sm) {
-    font-size: 3rem;
-  }
-
-  @include breakpoint($bp-md) {
-    font-size: 2rem;
-  }
+  font-family: $font-primary;
 }
 
 .hero__cta {
