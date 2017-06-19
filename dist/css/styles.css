@@ -415,7 +415,7 @@ li {
   padding: 0;
   list-style: none; }
 
-.card {
+.card__item {
   position: relative;
   text-align: center;
   padding: 4rem 2rem; }
@@ -571,7 +571,7 @@ h4 {
   text-align: center;
   padding: 4rem 2rem; }
   .card__item.card__item--blue {
-    background: #009ED6 url("../../dist/assets/computers-small.jpg");
+    background: url("../../dist/assets/computers-small.jpg");
     background-size: cover; }
     .card__item.card__item--blue::before {
       content: '';
@@ -585,7 +585,7 @@ h4 {
       opacity: 0.9;
       z-index: 10; }
   .card__item.card__item--orange {
-    background: #ED8931 url("../../dist/assets/computers-small.jpg");
+    background: url("../../dist/assets/computers-small.jpg");
     background-size: cover;
     border-top: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE; }
@@ -606,7 +606,7 @@ h4 {
         border-top: 0;
         border-bottom: 0; } }
   .card__item.card__item--gray {
-    background: #65BA69 url("../../dist/assets/computers-small.jpg");
+    background: url("../../dist/assets/computers-small.jpg");
     background-size: cover; }
     .card__item.card__item--gray::before {
       content: '';
@@ -619,16 +619,6 @@ h4 {
       background: #464646;
       opacity: 0.9;
       z-index: 10; }
-  .card__item .button {
-    display: inline-block;
-    margin-top: 4rem;
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF; }
-    .card__item .button:hover, .card__item .button:focus {
-      background-color: #FFFFFF;
-      color: #000000;
-      border: 2px solid #FFFFFF; }
 
 .card__items__content {
   color: #FFFFFF;

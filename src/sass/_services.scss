@@ -12,13 +12,13 @@
 
   &.card__item--blue {
     @include opacity-overlay(0.9, $color-blue);
-    background:  $color-blue url('../../dist/assets/computers-small.jpg');
+    background: url('../../dist/assets/computers-small.jpg');
     background-size: cover;
   }
 
   &.card__item--orange {
     @include opacity-overlay(0.9, $color-orange);
-    background: $color-orange url('../../dist/assets/computers-small.jpg');
+    background: url('../../dist/assets/computers-small.jpg');
     background-size: cover;
     border-top: 1px solid $color-gallery;
     border-bottom: 1px solid $color-gallery;
@@ -32,23 +32,8 @@
 
   &.card__item--gray {
     @include opacity-overlay(0.9, $color-tundora);
-    background: $color-green url('../../dist/assets/computers-small.jpg');
+    background: url('../../dist/assets/computers-small.jpg');
     background-size: cover;
-  }
-
-  .button {
-    display: inline-block;
-    margin-top: 4rem;
-    background-color: transparent;
-    border: 2px solid $color-white;
-    color: $color-white;
-
-    &:hover,
-    &:focus {
-      background-color: $color-white;
-      color: $color-black;
-      border: 2px solid $color-white;
-    }
   }
 }
 
