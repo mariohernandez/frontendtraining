@@ -524,3 +524,13 @@ h4 {
   @media (min-width: 55em) {
     .hero__cta {
       margin-top: 6rem; } }
+
+@media (min-width: 55em) {
+  .content-container {
+    margin: 0 20px; } }
+
+@media (min-width: 64em) {
+  .content-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; } }
