@@ -1,7 +1,11 @@
 .hero {
-  @include opacity-overlay(0.9, darken($color-blue, 25%));
+  @include opacity-overlay(0.7, $color-blue);
   line-height: 0.8;
   position: relative;
+}
+
+.hero__cards {
+  position: absolute;
 }
 
 .hero__text {

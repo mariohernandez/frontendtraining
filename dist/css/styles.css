@@ -415,6 +415,33 @@ li {
   padding: 0;
   list-style: none; }
 
+.card {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem; }
+
+.card__content {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 30;
+  font-family: "Merriweather", serif; }
+
+.card__heading {
+  font-family: "Open Sans", sans-serif; }
+
+.card__teaser {
+  text-align: left;
+  padding: 0 2rem; }
+
+.card__icon-wrapper {
+  margin: 0 0 2rem;
+  text-align: right; }
+
+.card__icon {
+  fill: #FFFFFF;
+  width: 50px;
+  height: 50px; }
+
 h1,
 h2,
 h3,
@@ -465,9 +492,12 @@ h4 {
     position: absolute;
     top: 0;
     left: 0;
-    background: #004057;
-    opacity: 0.9;
+    background: #009ED6;
+    opacity: 0.7;
     z-index: 10; }
+
+.hero__cards {
+  position: absolute; }
 
 .hero__text {
   position: absolute;
@@ -530,3 +560,94 @@ h4 {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto; } }
+
+@media (min-width: 64em) {
+  .card__items {
+    display: -ms-flexbox;
+    display: flex; } }
+
+.card__item {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem; }
+  .card__item.card__item--blue {
+    background: #009ED6 url("../../dist/assets/computers-small.jpg");
+    background-size: cover; }
+    .card__item.card__item--blue::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #009ED6;
+      opacity: 0.9;
+      z-index: 10; }
+  .card__item.card__item--orange {
+    background: #ED8931 url("../../dist/assets/computers-small.jpg");
+    background-size: cover;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE; }
+    .card__item.card__item--orange::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #ED8931;
+      opacity: 0.9;
+      z-index: 10; }
+    @media (min-width: 64em) {
+      .card__item.card__item--orange {
+        border: 1px solid #EEEEEE;
+        border-top: 0;
+        border-bottom: 0; } }
+  .card__item.card__item--gray {
+    background: #65BA69 url("../../dist/assets/computers-small.jpg");
+    background-size: cover; }
+    .card__item.card__item--gray::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #464646;
+      opacity: 0.9;
+      z-index: 10; }
+  .card__item .button {
+    display: inline-block;
+    margin-top: 4rem;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF; }
+    .card__item .button:hover, .card__item .button:focus {
+      background-color: #FFFFFF;
+      color: #000000;
+      border: 2px solid #FFFFFF; }
+
+.card__items__content {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 30;
+  font-family: "Merriweather", serif; }
+
+.card__items__heading {
+  font-family: "Open Sans", sans-serif; }
+
+.card__items__teaser {
+  text-align: left;
+  padding: 0 2rem; }
+
+.card__items__icon-wrapper {
+  margin: 0 auto 2rem; }
+
+.card__items__icon {
+  fill: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 3rem; }

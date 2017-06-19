@@ -1,0 +1,80 @@
+.card__items {
+
+  @include breakpoint($bp-md) {
+    display: flex;
+  }
+}
+
+.card__item {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+
+  &.card__item--blue {
+    @include opacity-overlay(0.9, $color-blue);
+    background:  $color-blue url('../../dist/assets/computers-small.jpg');
+    background-size: cover;
+  }
+
+  &.card__item--orange {
+    @include opacity-overlay(0.9, $color-orange);
+    background: $color-orange url('../../dist/assets/computers-small.jpg');
+    background-size: cover;
+    border-top: 1px solid $color-gallery;
+    border-bottom: 1px solid $color-gallery;
+
+    @include breakpoint($bp-md) {
+      border: 1px solid $color-gallery;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+
+  &.card__item--gray {
+    @include opacity-overlay(0.9, $color-tundora);
+    background: $color-green url('../../dist/assets/computers-small.jpg');
+    background-size: cover;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 4rem;
+    background-color: transparent;
+    border: 2px solid $color-white;
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      color: $color-black;
+      border: 2px solid $color-white;
+    }
+  }
+}
+
+.card__items__content {
+  color: $color-white;
+  position: relative;
+  z-index: $zi-medium;
+  font-family: $font-secondary;
+}
+
+.card__items__heading {
+  font-family: $font-primary;
+}
+
+.card__items__teaser {
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.card__items__icon-wrapper {
+  margin: 0 auto 2rem;
+}
+
+.card__items__icon {
+  fill: $color-white;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 3rem;
+}

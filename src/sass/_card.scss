@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.card__content {
+  color: $color-white;
+  position: relative;
+  z-index: $zi-medium;
+  font-family: $font-secondary;
+}
+
+.card__heading {
+  font-family: $font-primary;
+}
+
+.card__teaser {
+  text-align: left;
+  padding: 0 2rem;
+}
+
+.card__icon-wrapper {
+  margin: 0 0 2rem;
+  text-align: right;
+}
+
+.card__icon {
+  fill: $color-white;
+  width: 50px;
+  height: 50px;
+}
