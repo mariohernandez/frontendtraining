@@ -519,17 +519,14 @@ h4 {
     .hero__cta {
       margin-top: 6rem; } }
 
-.content-container::after {
-  content: '';
-  display: table;
-  clear: both; }
-
-@media (min-width: 55em) {
-  .content-container {
-    margin: 0 20px; } }
-
-@media (min-width: 64em) {
-  .content-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto; } }
+.content-container {
+  margin: 0 20px; }
+  .content-container::after {
+    content: '';
+    display: table;
+    clear: both; }
+  @media (min-width: 64em) {
+    .content-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto; } }
