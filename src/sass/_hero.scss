@@ -1,7 +1,5 @@
 .hero {
   @include opacity-overlay(0.9, darken($color-blue, 25%));
-  background: url('../../dist/assets/code.jpg') 0 0 no-repeat;
-  bakcground-size: cover;
   line-height: 0.8;
   position: relative;
   min-height: 400px;
