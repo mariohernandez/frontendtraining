@@ -456,8 +456,7 @@ h4 {
 
 .hero {
   line-height: 0.8;
-  position: relative;
-  min-height: 400px; }
+  position: relative; }
   .hero::before {
     content: '';
     display: block;
@@ -469,9 +468,6 @@ h4 {
     background: #004057;
     opacity: 0.9;
     z-index: 10; }
-  @media (min-width: 64em) {
-    .hero {
-      min-height: 600px; } }
 
 .hero__text {
   position: absolute;

@@ -2,11 +2,6 @@
   @include opacity-overlay(0.9, darken($color-blue, 25%));
   line-height: 0.8;
   position: relative;
-  min-height: 400px;
-
-  @include breakpoint($bp-md) {
-    min-height: 600px;
-  }
 }
 
 .hero__text {
