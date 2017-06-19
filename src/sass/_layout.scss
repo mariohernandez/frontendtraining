@@ -1,4 +1,5 @@
 .content-container {
+  @include clearfix;
 
   @include breakpoint($bp-sm) {
     margin: 0 20px;
