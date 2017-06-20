@@ -1,4 +1,6 @@
 .card__items {
+  margin: -50px auto 50px;
+  width: 90%;
 
   @include breakpoint($bp-md) {
     display: flex;
@@ -22,8 +24,8 @@
     @include opacity-overlay(0.9, $color-orange);
     background: url('../../dist/assets/computers-small.jpg');
     background-size: cover;
-    border-top: 1px solid $color-tundora;
-    border-bottom: 1px solid $color-tundora;
+    border-top: 1px solid $color-gallery;
+    border-bottom: 1px solid $color-gallery;
 
     @include breakpoint($bp-md) {
       border: 1px solid $color-gallery;

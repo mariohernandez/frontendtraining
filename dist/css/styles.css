@@ -415,12 +415,15 @@ li {
   padding: 0;
   list-style: none; }
 
-@media (min-width: 64em) {
-  .card__items {
-    display: -ms-flexbox;
-    display: flex;
-    margin: -50px auto 50px;
-    width: 1024px; } }
+.card__items {
+  margin: -50px auto 50px;
+  width: 90%; }
+  @media (min-width: 64em) {
+    .card__items {
+      display: -ms-flexbox;
+      display: flex;
+      margin: -50px auto 50px;
+      width: 1024px; } }
 
 .card__item {
   position: relative;
@@ -444,8 +447,8 @@ li {
   .card__item.card__item--orange {
     background: url("../../dist/assets/computers-small.jpg");
     background-size: cover;
-    border-top: 1px solid #464646;
-    border-bottom: 1px solid #464646; }
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE; }
     .card__item.card__item--orange::before {
       content: '';
       display: block;
@@ -490,6 +493,35 @@ li {
   fill: #FFFFFF;
   width: 60px;
   height: 60px; }
+
+.workshop-description__info {
+  position: relative;
+  line-height: 0.8; }
+  .workshop-description__info::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #004057;
+    opacity: 0.9;
+    z-index: 10; }
+
+.workshop-description__text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  max-width: 1200px;
+  left: 5%;
+  color: #FFFFFF;
+  z-index: 20;
+  line-height: 1.8; }
+  .workshop-description__text p {
+    font-size: 2rem; }
 
 h1,
 h2,
