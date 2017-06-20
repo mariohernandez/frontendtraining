@@ -2,13 +2,15 @@
 
   @include breakpoint($bp-md) {
     display: flex;
+    margin: -50px auto 50px;
+    width: 1024px;
   }
 }
 
 .card__item {
   position: relative;
-  text-align: center;
   padding: 4rem 2rem;
+  flex: 0 0 33%;
 
   &.card__item--blue {
     @include opacity-overlay(0.9, $color-blue);
@@ -20,8 +22,8 @@
     @include opacity-overlay(0.9, $color-orange);
     background: url('../../dist/assets/computers-small.jpg');
     background-size: cover;
-    border-top: 1px solid $color-gallery;
-    border-bottom: 1px solid $color-gallery;
+    border-top: 1px solid $color-tundora;
+    border-bottom: 1px solid $color-tundora;
 
     @include breakpoint($bp-md) {
       border: 1px solid $color-gallery;
@@ -31,35 +33,25 @@
   }
 
   &.card__item--gray {
-    @include opacity-overlay(0.9, $color-tundora);
+    @include opacity-overlay(0.9, $color-green);
     background: url('../../dist/assets/computers-small.jpg');
     background-size: cover;
   }
 }
 
-.card__items__content {
+.card__content {
   color: $color-white;
   position: relative;
   z-index: $zi-medium;
-  font-family: $font-secondary;
 }
 
-.card__items__heading {
-  font-family: $font-primary;
+.card__icon-wrapper {
+  margin: 0 auto;
+  text-align: center;
 }
 
-.card__items__teaser {
-  text-align: left;
-  padding: 0 2rem;
-}
-
-.card__items__icon-wrapper {
-  margin: 0 auto 2rem;
-}
-
-.card__items__icon {
+.card__icon {
   fill: $color-white;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto 3rem;
+  width: 60px;
+  height: 60px;
 }
