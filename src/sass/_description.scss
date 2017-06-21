@@ -8,6 +8,14 @@
   line-height: 0.8;
   min-height: 500px;
   overflow: hidden;
+
+  @include breakpoint($bp-xsm) {
+    min-height: 360px;
+  }
+
+  @include breakpoint($bp-sm) {
+    min-height: inherit;
+  }
 }
 
 .workshop-description__text {
@@ -20,7 +28,7 @@
   z-index: $zi-low;
   line-height: 1.8;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-xxsm) {
     @include vertical-align(absolute);
   }
 

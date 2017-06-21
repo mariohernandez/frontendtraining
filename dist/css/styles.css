@@ -515,6 +515,12 @@ li {
     background: #004057;
     opacity: 0.9;
     z-index: 10; }
+  @media (min-width: 40em) {
+    .workshop-description__info {
+      min-height: 360px; } }
+  @media (min-width: 55em) {
+    .workshop-description__info {
+      min-height: inherit; } }
 
 .workshop-description__text {
   position: absolute;
@@ -525,7 +531,7 @@ li {
   color: #FFFFFF;
   z-index: 20;
   line-height: 1.8; }
-  @media (min-width: 55em) {
+  @media (min-width: 30em) {
     .workshop-description__text {
       display: block;
       position: absolute;
