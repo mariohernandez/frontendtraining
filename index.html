@@ -73,7 +73,12 @@
       <!-- workshop description -->
       <section class="workshop-description">
         <div class="workshop-description__info">
-          <img src="dist/assets/code.jpg" alt="Learn about this workshop">
+          <picture>
+            <source media="all and (min-width: 1024px)" srcset="dist/assets/code.jpg">
+            <source media="all and (min-width: 720px)" srcset="dist/assets/code-med.jpg">
+            <source media="all and (min-width: 1px)" srcset="dist/assets/code-small.jpg">
+            <img src="dist/assets/code-med.jpg" alt="Hero with background image">
+          </picture>
           <div class="workshop-description__text">
             <h2>About this workshop</h2>
             <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis.</p>

@@ -1,21 +1,28 @@
 .workshop-description {
-  // position: relative;
+  position: relative;
 }
 
 .workshop-description__info {
   @include opacity-overlay(0.9, darken($color-blue, 25%));
   position: relative;
   line-height: 0.8;
+  min-height: 500px;
+  overflow: hidden;
 }
 
 .workshop-description__text {
-  @include vertical-align(absolute);
+  position: absolute;
+  top: 4rem;
   width: 90%;
   max-width: 1200px;
   left: 5%;
   color: $color-white;
   z-index: $zi-low;
   line-height: 1.8;
+
+  @include breakpoint($bp-sm) {
+    @include vertical-align(absolute);
+  }
 
   p {
     font-size: 2rem;
