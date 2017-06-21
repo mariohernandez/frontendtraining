@@ -425,7 +425,7 @@ li {
       display: -ms-flexbox;
       display: flex;
       margin: -60px auto 60px;
-      width: 1024px; } }
+      width: 960px; } }
 
 .card__item {
   position: relative;
@@ -526,19 +526,53 @@ li {
   position: absolute;
   top: 4rem;
   width: 90%;
-  max-width: 1200px;
   left: 5%;
   color: #FFFFFF;
   z-index: 20;
   line-height: 1.8; }
+  .workshop-description__text.content-container {
+    margin: 0; }
   @media (min-width: 30em) {
     .workshop-description__text {
       display: block;
       position: absolute;
       top: 50%;
       transform: translateY(-50%); } }
+  @media (min-width: 64em) {
+    .workshop-description__text {
+      display: inline-block;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 30%; } }
   .workshop-description__text p {
     font-size: 2rem; }
+
+@media (min-width: 55em) {
+  .workshop-description__text--inner {
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (min-width: 55em) {
+  .text-only {
+    padding-right: 6rem; } }
+
+.icon-only {
+  display: none; }
+  @media (min-width: 55em) {
+    .icon-only {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center; } }
+
+.description__icon {
+  fill: #FFFFFF; }
+  @media (min-width: 55em) {
+    .description__icon {
+      height: 120px;
+      width: auto;
+      margin-left: auto; } }
 
 h1,
 h2,
@@ -636,5 +670,5 @@ h4 {
   @media (min-width: 64em) {
     .content-container {
       width: 90%;
-      max-width: 1200px;
+      max-width: 1024px;
       margin: 0 auto; } }

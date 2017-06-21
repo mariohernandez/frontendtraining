@@ -22,17 +22,57 @@
   position: absolute;
   top: 4rem;
   width: 90%;
-  max-width: 1200px;
   left: 5%;
   color: $color-white;
   z-index: $zi-low;
   line-height: 1.8;
 
+  &.content-container {
+    margin: 0;
+  }
+
   @include breakpoint($bp-xxsm) {
     @include vertical-align(absolute);
   }
 
+  @include breakpoint($bp-md) {
+    @include horizontal-align(absolute);
+    top: 30%;
+  }
+
   p {
     font-size: 2rem;
+  }
+}
+
+.workshop-description__text--inner {
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+  }
+}
+
+.text-only {
+  @include breakpoint($bp-sm) {
+    padding-right: 6rem;
+  }
+}
+
+.icon-only {
+  display: none;
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.description__icon {
+  fill: $color-white;
+
+  @include breakpoint($bp-sm) {
+    height: 120px;
+    width: auto;
+    margin-left: auto;
   }
 }
