@@ -9,7 +9,6 @@ var gulp = require('gulp');
 //=======================================================
 // Include Our Plugins
 //=======================================================
-var sync        = require('browser-sync');
 var runSequence = require('run-sequence');
 
 //=======================================================

@@ -416,16 +416,22 @@ li {
   padding: 0;
   list-style: none; }
 
+.technologies {
+  background: #EEEEEE;
+  padding: 80px 0; }
+
+.technologies__heading {
+  margin: 0 auto 3rem;
+  text-align: center; }
+
 .card__items {
-  margin: -50px auto 60px;
+  margin: 0 auto;
   width: 90%; }
   @media (min-width: 64em) {
     .card__items {
-      box-shadow: 0 28px 80px -7px rgba(0, 0, 0, 0.35);
       display: -ms-flexbox;
       display: flex;
-      margin: -60px auto 60px;
-      width: 960px; } }
+      max-width: 1024px; } }
 
 .card__item {
   position: relative;
@@ -660,6 +666,27 @@ h4 {
   @media (min-width: 55em) {
     .hero__cta {
       margin-top: 6rem; } }
+
+.course-intro {
+  background: #FFFFFF;
+  padding: 3rem 2rem;
+  margin: -2rem 20px 5rem;
+  border: 1x solid #BBBBBB; }
+  @media (min-width: 55em) {
+    .course-intro {
+      margin: -3rem 20px 6rem;
+      padding: 5rem 3rem;
+      box-shadow: 0 10px 60px -7px rgba(0, 0, 0, 0.25); } }
+  @media (min-width: 64em) {
+    .course-intro {
+      width: 90%;
+      max-width: 1024px;
+      margin: -5rem auto 10rem;
+      padding: 8rem 5rem; } }
+
+.course-intro__intro {
+  line-height: 1.8;
+  font-size: 2rem; }
 
 .content-container {
   margin: 0 20px; }

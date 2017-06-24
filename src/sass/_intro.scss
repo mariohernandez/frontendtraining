@@ -1,0 +1,24 @@
+.course-intro {
+  background: $color-white;
+  padding: 3rem 2rem;
+  margin: -2rem 20px 5rem;
+  border: 1x solid $color-silver;
+
+  @include breakpoint($bp-sm) {
+    margin: -3rem 20px 6rem;
+    padding: 5rem 3rem;
+    box-shadow: 0 10px 60px -7px rgba(0, 0, 0, 0.25);
+  }
+
+  @include breakpoint($bp-md) {
+    width: 90%;
+    max-width: 1024px;
+    margin: -5rem auto 10rem;
+    padding: 8rem 5rem;
+  }
+}
+
+.course-intro__intro {
+  line-height: 1.8;
+  font-size: 2rem;
+}
