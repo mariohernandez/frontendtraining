@@ -1,11 +1,11 @@
 .course-intro {
   background: $color-white;
   padding: 3rem 2rem;
-  margin: -2rem 20px 5rem;
+  margin: -4rem 20px 5rem;
   border: 1x solid $color-silver;
 
   @include breakpoint($bp-sm) {
-    margin: -3rem 20px 6rem;
+    margin: -4rem 20px 6rem;
     padding: 4rem 3rem;
   }
 
@@ -14,6 +14,35 @@
     max-width: 1024px;
     margin: -5rem auto 10rem;
     padding: 6rem 5rem;
+  }
+}
+
+.course-intro__logo {
+  width: calc(80px + 3rem);
+  height: calc(80px + 3rem);
+  margin: -8.5rem auto 5rem;
+  background: lighten($color-gallery, 5%);
+  border: 1px solid $color-gallery;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($bp-sm) {
+    width: calc(100px + 4rem);
+    height: calc(100px + 4rem);
+    margin: -11rem auto 5rem;
+    padding: 2rem;
+  }
+
+  @include breakpoint($bp-md) {
+    margin: -13rem auto 5rem;
+  }
+
+  svg {
+    fill: $color-blue;
   }
 }
 

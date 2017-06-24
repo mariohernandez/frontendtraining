@@ -1,8 +1,7 @@
 .hero {
-  background: #292b2c;
-  background-image: linear-gradient(to bottom,rgba(255,255,255,.15)0,transparent 50%);
-  background-repeat: repeat-x;
+  background: $color-blue;
   padding: 6rem 0 15rem;
+  border-top: 5px solid darken($color-blue, 10%);
 }
 
 .hero__cards {
@@ -16,14 +15,19 @@
 
 .hero__heading {
   font-family: $font-tertiary;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: 0.05rem;
   margin-bottom: 1rem;
 
   span {
-    font-size: 4rem;
+    font-size: 2rem;
     display: block;
+    font-weight: 300;
+
+    @include breakpoint($bp-sm) {
+      font-size: 2.5rem;
+    }
   }
 
   @include breakpoint($bp-sm) {
@@ -36,8 +40,13 @@
 }
 
 .hero__subheading {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: $font-primary;
+  font-style: italic;
+
+  @include breakpoint($bp-sm) {
+    font-size: 2.5rem;
+  }
 }
 
 .hero__cta {

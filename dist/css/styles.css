@@ -620,10 +620,9 @@ h4 {
       font-size: 2.4rem; } }
 
 .hero {
-  background: #292b2c;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0, transparent 50%);
-  background-repeat: repeat-x;
-  padding: 6rem 0 15rem; }
+  background: #009ED6;
+  padding: 6rem 0 15rem;
+  border-top: 5px solid #0078a3; }
 
 .hero__cards {
   position: absolute; }
@@ -634,13 +633,17 @@ h4 {
 
 .hero__heading {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: 0.05rem;
   margin-bottom: 1rem; }
   .hero__heading span {
-    font-size: 4rem;
-    display: block; }
+    font-size: 2rem;
+    display: block;
+    font-weight: 300; }
+    @media (min-width: 55em) {
+      .hero__heading span {
+        font-size: 2.5rem; } }
   @media (min-width: 55em) {
     .hero__heading {
       font-size: 4rem; } }
@@ -649,8 +652,12 @@ h4 {
       font-size: 6rem; } }
 
 .hero__subheading {
-  font-size: 2.5rem;
-  font-family: "Open Sans", sans-serif; }
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic; }
+  @media (min-width: 55em) {
+    .hero__subheading {
+      font-size: 2.5rem; } }
 
 .hero__cta {
   margin-top: 1rem; }
@@ -670,11 +677,11 @@ h4 {
 .course-intro {
   background: #FFFFFF;
   padding: 3rem 2rem;
-  margin: -2rem 20px 5rem;
+  margin: -4rem 20px 5rem;
   border: 1x solid #BBBBBB; }
   @media (min-width: 55em) {
     .course-intro {
-      margin: -3rem 20px 6rem;
+      margin: -4rem 20px 6rem;
       padding: 4rem 3rem; } }
   @media (min-width: 64em) {
     .course-intro {
@@ -682,6 +689,33 @@ h4 {
       max-width: 1024px;
       margin: -5rem auto 10rem;
       padding: 6rem 5rem; } }
+
+.course-intro__logo {
+  width: calc(80px + 3rem);
+  height: calc(80px + 3rem);
+  margin: -8.5rem auto 5rem;
+  background: #fbfbfb;
+  border: 1px solid #EEEEEE;
+  text-align: center;
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media (min-width: 55em) {
+    .course-intro__logo {
+      width: calc(100px + 4rem);
+      height: calc(100px + 4rem);
+      margin: -11rem auto 5rem;
+      padding: 2rem; } }
+  @media (min-width: 64em) {
+    .course-intro__logo {
+      margin: -13rem auto 5rem; } }
+  .course-intro__logo svg {
+    fill: #009ED6; }
 
 .course-intro__heading {
   text-align: center;
