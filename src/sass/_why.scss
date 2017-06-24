@@ -1,16 +1,16 @@
-.workshop-description {
+.workshop-why {
   position: relative;
 }
 
-.workshop-description__info {
+.workshop-why__info {
   @include opacity-overlay(0.9, darken($color-blue, 25%));
   position: relative;
   line-height: 0.8;
-  min-height: 500px;
+  min-height: 800px;
   overflow: hidden;
 
   @include breakpoint($bp-xsm) {
-    min-height: 360px;
+    min-height: 600px;
   }
 
   @include breakpoint($bp-sm) {
@@ -18,7 +18,7 @@
   }
 }
 
-.workshop-description__text {
+.workshop-why__text {
   position: absolute;
   top: 4rem;
   width: 90%;
@@ -33,19 +33,29 @@
 
   @include breakpoint($bp-xxsm) {
     @include vertical-align(absolute);
+    // top: 6%;
   }
 
-  @include breakpoint($bp-md) {
+  @include breakpoint($bp-sm) {
     @include horizontal-align(absolute);
-    top: 30%;
+    top: 10%;
   }
 
+  // @include breakpoint($bp-md) {
+  //   @include horizontal-align(absolute);
+  //   top: 15%;
+  // }
+
+  @include breakpoint($bp-lg) {
+    @include horizontal-align(absolute);
+    top: 25%;
+  }
   p {
     font-size: 2rem;
   }
 }
 
-.workshop-description__text--inner {
+.workshop-why__text--inner {
 
   @include breakpoint($bp-sm) {
     display: flex;

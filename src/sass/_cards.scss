@@ -14,39 +14,31 @@
 
   @include breakpoint($bp-md) {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1024px;
   }
 }
 
 .card__item {
+  @include opacity-overlay(0.9, $color-blue);
   position: relative;
-  padding: 4rem 2rem;
-  flex: 0 0 33.333333%;
-
-  &.card__item--blue {
-    @include opacity-overlay(0.9, $color-blue);
-    background: url('../../dist/assets/computers-small.jpg');
-    background-size: cover;
-  }
+  padding: 4rem 3rem;
+  flex: 0 0 50%;
+  background: url('../../dist/assets/computers-small.jpg');
+  background-size: cover;
+  border-right: 1px solid $color-gallery;
+  border-bottom: 1px solid $color-gallery;
 
   &.card__item--orange {
     @include opacity-overlay(0.9, $color-orange);
-    background: url('../../dist/assets/computers-small.jpg');
-    background-size: cover;
-    border-top: 1px solid $color-gallery;
-    border-bottom: 1px solid $color-gallery;
+  }
 
-    @include breakpoint($bp-md) {
-      border: 1px solid $color-gallery;
-      border-top: 0;
-      border-bottom: 0;
-    }
+  &.card__item--green {
+    @include opacity-overlay(0.9, $color-green);
   }
 
   &.card__item--gray {
-    @include opacity-overlay(0.9, $color-green);
-    background: url('../../dist/assets/computers-small.jpg');
-    background-size: cover;
+    @include opacity-overlay(0.9, $color-tundora);
   }
 }
 
@@ -57,7 +49,7 @@
 }
 
 .card__icon-wrapper {
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   text-align: center;
 }
 
@@ -65,4 +57,5 @@
   fill: $color-white;
   width: 60px;
   height: 60px;
+  margin: 0 25px;
 }
