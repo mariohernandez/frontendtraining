@@ -1,5 +1,6 @@
 .workshop-why {
   position: relative;
+  margin-bottom: 8rem;
 }
 
 .workshop-why__info {
@@ -33,18 +34,12 @@
 
   @include breakpoint($bp-xxsm) {
     @include vertical-align(absolute);
-    // top: 6%;
   }
 
   @include breakpoint($bp-sm) {
     @include horizontal-align(absolute);
     top: 10%;
   }
-
-  // @include breakpoint($bp-md) {
-  //   @include horizontal-align(absolute);
-  //   top: 15%;
-  // }
 
   @include breakpoint($bp-lg) {
     @include horizontal-align(absolute);
