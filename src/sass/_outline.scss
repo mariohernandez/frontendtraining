@@ -1,29 +1,38 @@
+.outline {
+  margin-bottom: 8rem;
+}
+
 .outline__heading {
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.outline p {
+  margin-bottom: 2rem;
 }
 
 .accordion dl,
 .accordion-list {
-   border: 1px solid $color-alto;
+ border: 1px solid $color-alto;
 
-   &:after {
-       content: '';
-       display: block;
-       height: 1em;
-       width: 100%;
-       background-color: darken($color-green, 10%);
-     }
+ &:after {
+  content: '';
+  display: block;
+  height: 1em;
+  width: 100%;
+  background-color: darken($color-alto, 5%);
+  }
 }
 
 .accordion dd,
 .accordion__panel {
-   background-color: $color-gallery;
-   font-size: 1em;
-   line-height: 1.5em;
+  background-color: $color-gallery;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .accordion p {
-  padding: 1em 2em;
+  padding: 1em 2em 1em 0;
 }
 
 .accordion {
@@ -33,32 +42,43 @@
 
 .accordionTitle,
 .accordion__Heading {
-  background-color: $color-green;
-  text-align: center;
-  font-weight: 700;
-  padding: 2em;
-  display: block;
+  background-color: lighten($color-alto, 3%);
+  font-weight: 300;
+  padding: 1.8rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   text-decoration: none;
-  color:  $color-white;
+  color:  $color-tundora;
   transition: background-color 0.5s ease-in-out;
-  border-bottom: 1px solid darken(#38cc70, 5%);
+  border-bottom: 1px solid darken($color-alto, 5%);
+  font-size: 2rem;
+
+  @include breakpoint($bp-sm) {
+    padding: 2em;
+  }
 
   &:before {
     content:  "+";
     font-size: 1.5em;
+    font-weight: 300;
     line-height: 0.5em;
-    float: left;
+    margin-right: 1rem;
     transition:  transform 0.3s ease-in-out;
+
+    @include breakpoint($bp-sm) {
+      margin-right: 2rem;
+    }
   }
 
   &:hover {
-    background-color: darken(#38cc70, 10%);
+    background-color: $color-alto;
   }
 }
 
 .accordionTitleActive,
 .accordionTitle.is-expanded {
-  background-color: darken(#38cc70, 10%);
+  background-color: $color-alto;
 
   &:before {
     transform: rotate(-225deg);
@@ -101,6 +121,7 @@
     transform: scale(0.9) rotateX(-60deg);
     transform-origin:  50% 0;
   }
+
   100% {
     opacity: 1;
     transform: scale(1);

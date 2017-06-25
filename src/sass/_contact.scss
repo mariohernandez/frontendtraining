@@ -1,0 +1,17 @@
+.contact {
+  background: $color-green;
+  color: $color-white;
+  padding: 4rem 0;
+
+  .contact__content {
+    margin-bottom: 4rem;
+  }
+}
+
+.contact__cta {
+  margin-top: 2rem;
+
+  .button {
+    background: $color-black;
+  }
+}

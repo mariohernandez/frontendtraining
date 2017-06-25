@@ -52,7 +52,7 @@ body {
   letter-spacing: 0.02em;
   color: $color-tundora;
   font-family: $font-primary;
-  background: darken($color-gallery, 5%);
+  background: $color-gallery;
 }
 
 /**
