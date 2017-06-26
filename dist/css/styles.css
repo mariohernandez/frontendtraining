@@ -409,12 +409,13 @@ ul,
 ol,
 dl {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  list-style-type: initial; }
 
 li {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: initial; }
 
 .button {
   display: inline-block;
@@ -425,7 +426,7 @@ li {
   text-decoration: none; }
 
 .technologies {
-  background: #DDDDDD;
+  background: #e6e6e6;
   padding: 80px 0; }
 
 .technologies__heading {
@@ -441,73 +442,23 @@ li {
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      max-width: 1024px; } }
+      max-width: 1200px; } }
 
 .card__item {
-  position: relative;
   padding: 4rem 3rem;
   -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  background: url("../../dist/assets/computers-small.jpg");
-  background-size: cover;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE; }
-  .card__item::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #009ED6;
-    opacity: 0.9;
-    z-index: 10; }
-  .card__item.card__item--orange::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ED8931;
-    opacity: 0.9;
-    z-index: 10; }
-  .card__item.card__item--green::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #65BA69;
-    opacity: 0.9;
-    z-index: 10; }
-  .card__item.card__item--gray::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #464646;
-    opacity: 0.9;
-    z-index: 10; }
+  flex: 0 0 50%; }
 
 .card__content {
-  color: #FFFFFF;
+  color: #464646;
   position: relative;
   z-index: 30; }
 
 .card__icon-wrapper {
-  margin: 0 auto 3rem;
-  text-align: center; }
+  margin: 0 auto 3rem; }
 
 .card__icon {
-  fill: #FFFFFF;
+  fill: #464646;
   width: 60px;
   height: 60px;
   margin: 0 25px; }
@@ -523,6 +474,10 @@ li {
   margin-top: 2rem; }
   .contact__cta .button {
     background: #000000; }
+
+.footer {
+  background: #222222;
+  color: #FFFFFF; }
 
 h1,
 h2,
@@ -564,9 +519,30 @@ h4 {
       font-size: 2.4rem; } }
 
 .hero {
-  background: #009ED6;
+  background: #009ED6 url("../assets/stairs-sm.jpg") 0 0 no-repeat;
+  background-size: cover;
   padding: 6rem 0 15rem;
-  border-top: 5px solid #0078a3; }
+  border-top: 5px solid #000000;
+  position: relative; }
+  @media (min-width: 55em) {
+    .hero {
+      background: #009ED6 url("../assets/stairs-med.jpg") center 0 no-repeat; } }
+  @media (min-width: 75em) {
+    .hero {
+      background: #009ED6 url("../assets/stairs.jpg") center 0 no-repeat; } }
+  .hero .content-container {
+    line-height: 0.8; }
+    .hero .content-container::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000000;
+      opacity: 0.7;
+      z-index: 10; }
 
 .hero__cards {
   position: absolute; }
@@ -580,7 +556,9 @@ h4 {
   font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: 0.05rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 20; }
   .hero__heading span {
     font-size: 2rem;
     display: block;
@@ -598,7 +576,9 @@ h4 {
 .hero__subheading {
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
-  font-style: italic; }
+  font-style: italic;
+  position: relative;
+  z-index: 20; }
   @media (min-width: 55em) {
     .hero__subheading {
       font-size: 2.5rem; } }
@@ -619,10 +599,12 @@ h4 {
       margin-top: 6rem; } }
 
 .course-intro {
+  position: relative;
+  z-index: 20;
   background: #FFFFFF;
   padding: 3rem 2rem;
   margin: -4rem 20px 5rem;
-  border: 1x solid #BBBBBB; }
+  border: 1px solid #DDDDDD; }
   @media (min-width: 55em) {
     .course-intro {
       margin: -4rem 20px 6rem;
@@ -684,7 +666,8 @@ h4 {
       margin: 0 auto; } }
 
 .outline {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  padding-top: 6rem; }
 
 .outline__heading {
   text-align: center;
@@ -799,9 +782,16 @@ h4 {
     opacity: 0;
     transform: scale(0.9) rotateX(-60deg); } }
 
+.outline__list,
+ul {
+  margin: 3rem 0;
+  list-style: initial; }
+  .outline__list li,
+  ul li {
+    list-style-type: circle; }
+
 .workshop-why {
-  position: relative;
-  margin-bottom: 8rem; }
+  position: relative; }
 
 .workshop-why__info {
   position: relative;

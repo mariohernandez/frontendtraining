@@ -447,10 +447,11 @@ ol,
 dl {
   margin: 0;
   padding: 0;
+  list-style-type: initial;
 }
 
 li {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: initial;
 }

@@ -1,7 +1,22 @@
 .hero {
-  background: $color-blue;
+  background: $color-blue url('../assets/stairs-sm.jpg') 0 0 no-repeat;
+  background-size: cover;
   padding: 6rem 0 15rem;
-  border-top: 5px solid darken($color-blue, 10%);
+  border-top: 5px solid $color-black;
+  position: relative;
+
+  @include breakpoint($bp-sm) {
+    background: $color-blue url('../assets/stairs-med.jpg') center 0 no-repeat;
+  }
+
+  @include breakpoint($bp-lg) {
+    background: $color-blue url('../assets/stairs.jpg') center 0 no-repeat;
+  }
+
+  .content-container {
+    @include opacity-overlay(0.7);
+    line-height: 0.8;
+  }
 }
 
 .hero__cards {
@@ -19,6 +34,8 @@
   font-size: 3.5rem;
   letter-spacing: 0.05rem;
   margin-bottom: 1rem;
+  position: relative;
+  z-index: $zi-low;
 
   span {
     font-size: 2rem;
@@ -43,6 +60,8 @@
   font-size: 2rem;
   font-family: $font-primary;
   font-style: italic;
+  position: relative;
+  z-index: $zi-low;
 
   @include breakpoint($bp-sm) {
     font-size: 2.5rem;
