@@ -48,11 +48,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0.02em;
   color: $color-tundora;
   font-family: $font-primary;
   background: $color-gallery;
+
+  @include breakpoint($bp-sm) {
+    font-size: 1.8rem;
+  }
 }
 
 /**

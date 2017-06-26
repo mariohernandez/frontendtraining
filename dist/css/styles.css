@@ -30,11 +30,14 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0.02em;
   color: #464646;
   font-family: "Open Sans", sans-serif;
   background: #EEEEEE; }
+  @media (min-width: 55em) {
+    body {
+      font-size: 1.8rem; } }
 
 /**
  * Add the correct display in IE 9-.
@@ -492,7 +495,7 @@ h6 {
   font-weight: 300; }
 
 h1 {
-  font-size: 2.4rem; }
+  font-size: 3rem; }
   @media (min-width: 40em) {
     h1 {
       font-size: 3.8rem; } }
@@ -501,16 +504,16 @@ h1 {
       font-size: 4.5rem; } }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 3.5rem; }
   @media (min-width: 40em) {
     h2 {
-      font-size: 3.6rem; } }
+      font-size: 3.8rem; } }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2.6rem; }
   @media (min-width: 40em) {
     h3 {
-      font-size: 2.6rem; } }
+      font-size: 3rem; } }
 
 h4 {
   font-size: 1.6rem; }
