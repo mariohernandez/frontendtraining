@@ -524,7 +524,7 @@ h4 {
 .hero {
   background: #009ED6 url("../assets/stairs-sm.jpg") 0 0 no-repeat;
   background-size: cover;
-  padding: 6rem 0 15rem;
+  padding: 10rem 0 20rem;
   border-top: 5px solid #000000;
   position: relative; }
   @media (min-width: 55em) {
