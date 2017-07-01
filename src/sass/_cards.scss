@@ -10,18 +10,18 @@
 
 .card__items {
   margin: 0 auto;
-  width: 90%;
 
   @include breakpoint($bp-md) {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    justify-content: space-between;
   }
 }
 
 .card__item {
-  padding: 4rem 3rem;
-  flex: 0 0 50%;
+  padding: 0;
+  flex: 0 0 46%;
+  margin: 4rem 0;
 }
 
 .card__content {
@@ -31,12 +31,12 @@
 }
 
 .card__icon-wrapper {
-  margin: 0 auto 3rem;
+  margin: 0 0 3rem;
 }
 
 .card__icon {
-  fill: $color-tundora;
+  fill: $color-blue;
   width: 60px;
   height: 60px;
-  margin: 0 25px;
+  margin-right: 3rem;
 }

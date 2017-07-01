@@ -437,20 +437,21 @@ li {
   text-align: center; }
 
 .card__items {
-  margin: 0 auto;
-  width: 90%; }
+  margin: 0 auto; }
   @media (min-width: 64em) {
     .card__items {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      max-width: 1200px; } }
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
 
 .card__item {
-  padding: 4rem 3rem;
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%; }
+  padding: 0;
+  -ms-flex: 0 0 46%;
+  flex: 0 0 46%;
+  margin: 4rem 0; }
 
 .card__content {
   color: #464646;
@@ -458,13 +459,13 @@ li {
   z-index: 30; }
 
 .card__icon-wrapper {
-  margin: 0 auto 3rem; }
+  margin: 0 0 3rem; }
 
 .card__icon {
-  fill: #464646;
+  fill: #009ED6;
   width: 60px;
   height: 60px;
-  margin: 0 25px; }
+  margin-right: 3rem; }
 
 .contact {
   background: #65BA69;
@@ -522,7 +523,7 @@ h4 {
       font-size: 2.4rem; } }
 
 .hero {
-  background: #009ED6 url("../assets/stairs-sm.jpg") 0 0 no-repeat;
+  background: #222222 url("../assets/stairs-sm.jpg") 0 0 no-repeat;
   background-size: cover;
   padding: 10rem 0 20rem;
   border-top: 5px solid #000000;

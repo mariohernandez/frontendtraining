@@ -12,7 +12,6 @@ var gulp = require('gulp');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var sourcemaps  = require('gulp-sourcemaps');
-var sync        = require('browser-sync');
 var babel       = require('gulp-babel');
 var rename      = require('gulp-rename');
 
@@ -36,7 +35,6 @@ module.exports = {
         return path;
       }))
       .pipe(gulp.dest('./dist/css'))
-      .pipe(sync.stream({match: '**/*.css'}));
   },
 
   // Compile JavaScript.
