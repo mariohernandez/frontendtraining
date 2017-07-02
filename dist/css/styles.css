@@ -424,14 +424,22 @@ li {
 
 .button {
   display: inline-block;
-  padding: 1rem 3rem;
-  background: #009ED6;
+  padding: 1.2rem 2.5rem;
+  background: #464646;
+  border: 1px solid #464646;
   color: #FFFFFF;
+  line-height: 1;
   text-align: center;
   text-decoration: none;
-  transition: background 0.3s ease-in-out; }
+  transition: background 0.3s ease-in-out;
+  letter-spacing: 2px;
+  border-radius: 1px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer; }
   .button:hover, .button:focus {
-    background: #008fc2; }
+    background: #3c3c3c; }
 
 .technologies {
   background: #f6f6f6; }
@@ -504,8 +512,8 @@ li {
       min-height: 100px;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      -ms-flex-align: left;
-      align-items: left; } }
+      -ms-flex-align: center;
+      align-items: center; } }
   .contact__content p {
     line-height: 1.2; }
     @media (min-width: 55em) {

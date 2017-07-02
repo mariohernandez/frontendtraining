@@ -1,14 +1,22 @@
 .button {
   display: inline-block;
-  padding: 1rem 3rem;
-  background: $color-blue;
+  padding: 1.2rem 2.5rem;
+  background: $color-tundora;
+  border: 1px solid $color-tundora;
   color: $color-white;
+  line-height: 1;
   text-align: center;
   text-decoration: none;
   transition: background 0.3s ease-in-out;
+  letter-spacing: 2px;
+  border-radius: 1px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    background: darken($color-blue, 4%);
+    background: darken($color-tundora, 4%);
   }
 }
