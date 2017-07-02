@@ -39,22 +39,19 @@
   font-size: 2.2rem;
 }
 
-.instructor__connect {
-  display: block;
-  font-size: 1.4rem;
-  margin: 2rem 0 1rem 3rem;
-}
-
 .instructor__social {
+  background: darken($color-light-gray, 5%);
+  border-top: 1px solid $color-silver;
   list-style: none;
   list-style-type: none;
-  width: 90%;
   margin: 0 auto;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-around;
 
   li {
     list-style: none;
+    line-height: 0.8;
   }
 }
 

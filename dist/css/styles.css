@@ -634,22 +634,20 @@ h3 {
   font-weight: 600;
   font-size: 2.2rem; }
 
-.instructor__connect {
-  display: block;
-  font-size: 1.4rem;
-  margin: 2rem 0 1rem 3rem; }
-
 .instructor__social {
+  background: #ececec;
+  border-top: 1px solid #BBBBBB;
   list-style: none;
   list-style-type: none;
-  width: 90%;
   margin: 0 auto;
+  padding: 1rem 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   .instructor__social li {
-    list-style: none; }
+    list-style: none;
+    line-height: 0.8; }
 
 .instructor__icon {
   width: 32px;
