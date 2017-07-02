@@ -1,4 +1,14 @@
 .footer {
   background: $color-mine-shaft;
-  color: $color-white;
+  color: $color-gray-nevada;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
 }

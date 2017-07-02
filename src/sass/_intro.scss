@@ -1,28 +1,13 @@
-.course-intro {
-  padding: 3rem 0;
-  margin: 4rem 0;
+// .course-intro {
+//   padding: 3rem 0;
+//   margin: 4rem 0;
+// }
 
-  @include breakpoint($bp-sm) {
-    // padding: 4rem 3rem;
-  }
+// .course-intro__intro {
+//   line-height: 1.8;
+//   font-size: 2rem;
 
-  @include breakpoint($bp-md) {
-    // width: 90%;
-    // max-width: 1024px;
-    // padding: 6rem 5rem;
-  }
-}
-
-.course-intro__heading {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.course-intro__intro {
-  line-height: 1.8;
-  font-size: 2rem;
-
-  p {
-    margin-bottom: 2rem;
-  }
-}
+//   p {
+//     margin-bottom: 2rem;
+//   }
+// }

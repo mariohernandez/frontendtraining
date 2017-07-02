@@ -1,8 +1,14 @@
 .button {
   display: inline-block;
   padding: 1rem 3rem;
-  background: $color-black;
+  background: $color-blue;
   color: $color-white;
   text-align: center;
   text-decoration: none;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: darken($color-blue, 4%);
+  }
 }

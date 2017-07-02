@@ -1,23 +1,11 @@
 .content-container {
   @include clearfix;
   margin: 0 20px;
+  padding: 5rem 0;
 
   @include breakpoint($bp-md) {
     width: 90%;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
   }
 }
-
-// .divider-border::before {
-//   content: '';
-//   display: block;
-//   width: 80%;
-//   position: absolute;
-//   bottom: 0;
-//   left: 50%;
-//   margin-left: -40%;
-//   height: 1px;
-//   background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,0.2) 0, rgba(255,255,255,0) 75%);
-//   background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0, rgba(255,255,255,0) 75%);
-// }

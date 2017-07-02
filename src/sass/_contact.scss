@@ -1,17 +1,50 @@
-.contact {
-  background: $color-green;
-  color: $color-white;
-  padding: 4rem 0;
+.contact__content {
+  border-top: 5px solid $color-blue;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba($color-black,0.1);
+  padding: 2rem;
+  align-items: center;
 
-  .contact__content {
-    margin-bottom: 4rem;
+  @include breakpoint($bp-sm) {
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: left;;
+  }
+
+  p {
+    line-height: 1.2;
+
+    @include breakpoint($bp-sm) {
+      margin: 0;
+      line-height: 1;
+    }
   }
 }
 
-.contact__cta {
-  margin-top: 2rem;
+.contact__text {
+  text-align: center;
 
-  .button {
-    background: $color-black;
+  .contact__icon {
+    width: 6rem;
+    height: auto;
   }
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+
+    .contact__icon {
+      margin-right: 20px;
+      display: inline-block;
+    }
+  }
+}
+.contact__cta {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }

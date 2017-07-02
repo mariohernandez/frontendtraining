@@ -425,14 +425,19 @@ li {
 .button {
   display: inline-block;
   padding: 1rem 3rem;
-  background: #000000;
+  background: #009ED6;
   color: #FFFFFF;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: background 0.3s ease-in-out; }
+  .button:hover, .button:focus {
+    background: #008fc2; }
 
 .technologies {
-  background: #f6f6f6;
-  padding: 80px 0; }
+  background: #f6f6f6; }
+  .technologies .content-container {
+    margin-bottom: 0;
+    padding-bottom: 0; }
 
 .technologies__intro {
   position: relative;
@@ -483,21 +488,68 @@ li {
   height: 60px;
   margin-right: 3rem; }
 
-.contact {
-  background: #65BA69;
-  color: #FFFFFF;
-  padding: 4rem 0; }
-  .contact .contact__content {
-    margin-bottom: 4rem; }
+.contact__content {
+  border-top: 5px solid #009ED6;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media (min-width: 55em) {
+    .contact__content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      min-height: 100px;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-align: left;
+      align-items: left; } }
+  .contact__content p {
+    line-height: 1.2; }
+    @media (min-width: 55em) {
+      .contact__content p {
+        margin: 0;
+        line-height: 1; } }
+
+.contact__text {
+  text-align: center; }
+  .contact__text .contact__icon {
+    width: 6rem;
+    height: auto; }
+  @media (min-width: 55em) {
+    .contact__text {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left; }
+      .contact__text .contact__icon {
+        margin-right: 20px;
+        display: inline-block; } }
 
 .contact__cta {
-  margin-top: 2rem; }
-  .contact__cta .button {
-    background: #000000; }
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem; }
 
 .footer {
   background: #222222;
-  color: #FFFFFF; }
+  color: #697176;
+  padding: 2rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1; }
+  .footer p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem; }
 
 .hero {
   position: relative;
@@ -555,6 +607,19 @@ li {
     fill: #009ED6;
     width: 8rem;
     height: auto; }
+
+.instructor {
+  position: relative; }
+  .instructor::before {
+    content: '';
+    display: block;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 2rem auto 2rem -40%;
+    height: 1px;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0, rgba(255, 255, 255, 0) 75%); }
 
 .instructor__card {
   max-width: 400px;
@@ -628,22 +693,9 @@ li {
   .instructor__icon:hover.linkedin, .instructor__icon:focus.linkedin {
     fill: #0077B5; }
 
-.course-intro {
-  padding: 3rem 0;
-  margin: 4rem 0; }
-
-.course-intro__heading {
-  text-align: center;
-  margin-bottom: 2rem; }
-
-.course-intro__intro {
-  line-height: 1.8;
-  font-size: 2rem; }
-  .course-intro__intro p {
-    margin-bottom: 2rem; }
-
 .content-container {
-  margin: 0 20px; }
+  margin: 0 20px;
+  padding: 5rem 0; }
   .content-container::after {
     content: '';
     display: table;
@@ -652,11 +704,7 @@ li {
     .content-container {
       width: 90%;
       max-width: 1024px;
-      margin: 0 auto; } }
-
-.outline {
-  margin-bottom: 8rem;
-  padding-top: 6rem; }
+      margin: 0 auto 4rem; } }
 
 .outline__heading {
   text-align: center;
@@ -779,9 +827,7 @@ ul {
     list-style-type: circle; }
 
 .workshop-why {
-  position: relative;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem; }
+  position: relative; }
   .workshop-why::before {
     content: '';
     display: block;
@@ -792,15 +838,6 @@ ul {
     margin: 2rem auto 2rem -40%;
     height: 1px;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0, rgba(255, 255, 255, 0) 75%); }
-
-.workshop-why__text.content-container {
-  margin: 0; }
-
-.workshop-why__text p {
-  font-size: 2rem; }
-
-.workshop-why__heading {
-  text-align: center; }
 
 h1,
 h2,
