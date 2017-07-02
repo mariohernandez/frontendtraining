@@ -32,9 +32,14 @@ h2 {
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 
-  @include breakpoint($bp-xsm) {
-    font-size: 2.8rem;
-  }
+.component__heading {
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: $color-tundora;
 }

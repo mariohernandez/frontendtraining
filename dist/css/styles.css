@@ -32,7 +32,7 @@ body {
   padding: 0;
   font-size: 2rem;
   letter-spacing: 0.02em;
-  color: #464646;
+  color: #697176;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   background: #FFFFFF;
@@ -499,39 +499,6 @@ li {
   background: #222222;
   color: #FFFFFF; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.05rem;
-  margin: 0 0 1rem;
-  line-height: 1.2; }
-
-h1 {
-  font-size: 4rem; }
-  @media (min-width: 40em) {
-    h1 {
-      font-size: 4.5rem; } }
-  @media (min-width: 64em) {
-    h1 {
-      font-size: 5rem; } }
-
-h2 {
-  font-size: 3rem; }
-  @media (min-width: 55em) {
-    h2 {
-      font-size: 4rem; } }
-
-h3 {
-  font-size: 2.4rem; }
-  @media (min-width: 40em) {
-    h3 {
-      font-size: 2.8rem; } }
-
 .hero {
   position: relative;
   height: 100vh; }
@@ -590,15 +557,11 @@ h3 {
     height: auto; }
 
 .instructor__card {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   border: 1px solid #BBBBBB;
   border-radius: 4px 4px 0 0;
   margin-bottom: 5rem; }
-
-.instructor__heading {
-  text-align: center;
-  margin-bottom: 3rem; }
 
 .instructor__bg-image {
   position: relative;
@@ -640,7 +603,7 @@ h3 {
   list-style: none;
   list-style-type: none;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -666,16 +629,8 @@ h3 {
     fill: #0077B5; }
 
 .course-intro {
-  padding: 3rem 2rem;
-  margin: 4rem auto 5rem; }
-  @media (min-width: 55em) {
-    .course-intro {
-      padding: 4rem 3rem; } }
-  @media (min-width: 64em) {
-    .course-intro {
-      width: 90%;
-      max-width: 1024px;
-      padding: 6rem 5rem; } }
+  padding: 3rem 0;
+  margin: 4rem 0; }
 
 .course-intro__heading {
   text-align: center;
@@ -846,3 +801,41 @@ ul {
 
 .workshop-why__heading {
   text-align: center; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  margin: 0 0 1rem;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 4rem; }
+  @media (min-width: 40em) {
+    h1 {
+      font-size: 4.5rem; } }
+  @media (min-width: 64em) {
+    h1 {
+      font-size: 5rem; } }
+
+h2 {
+  font-size: 3rem; }
+  @media (min-width: 55em) {
+    h2 {
+      font-size: 4rem; } }
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+.component__heading {
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #464646; }

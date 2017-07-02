@@ -1,14 +1,9 @@
 .instructor__card {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   border: 1px solid $color-silver;
   border-radius: 4px 4px 0 0;
   margin-bottom: 5rem;
-}
-
-.instructor__heading {
-  text-align: center;
-  margin-bottom: 3rem;
 }
 
 .instructor__bg-image {
@@ -45,7 +40,7 @@
   list-style: none;
   list-style-type: none;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
 

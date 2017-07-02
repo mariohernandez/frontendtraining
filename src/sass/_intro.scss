@@ -1,22 +1,15 @@
 .course-intro {
-  // position: relative;
-  // z-index: $zi-low;
-  // background: $color-tundora;
-  padding: 3rem 2rem;
-  margin: 4rem auto 5rem;
-  // border: 1px solid $color-alto;
+  padding: 3rem 0;
+  margin: 4rem 0;
 
   @include breakpoint($bp-sm) {
-    // margin: -4rem 20px 6rem;
-    padding: 4rem 3rem;
-    // color: $color-white;
+    // padding: 4rem 3rem;
   }
 
   @include breakpoint($bp-md) {
-    width: 90%;
-    max-width: 1024px;
-    // margin: -5rem auto 10rem;
-    padding: 6rem 5rem;
+    // width: 90%;
+    // max-width: 1024px;
+    // padding: 6rem 5rem;
   }
 }
 
