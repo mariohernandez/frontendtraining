@@ -1,6 +1,12 @@
 .technologies {
-  background: darken($color-gallery, 3%);
+  background: lighten($color-gallery, 3%);
   padding: 80px 0;
+}
+
+.technologies__intro {
+  @include divider-border;
+  position: relative;
+  padding-bottom: 5rem;
 }
 
 .technologies__heading {

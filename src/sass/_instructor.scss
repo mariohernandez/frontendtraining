@@ -1,0 +1,89 @@
+.instructor__card {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid $color-silver;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 5rem;
+}
+
+.instructor__heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.instructor__bg-image {
+  @include opacity-overlay(0.7);
+  position: relative;
+  line-height: 0.8;
+  z-index: $zi-lowest;
+}
+
+.instructor__headshot {
+  position: relative;
+  z-index: $zi-low;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid $color-white;
+  margin: -6rem calc(50% - 60px) 0;
+}
+
+.instructor__card--text {
+  padding: 0 2rem 2rem;
+  font-weight: 300;
+}
+
+.instructor__name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.instructor__connect {
+  display: block;
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 3rem;
+}
+
+.instructor__social {
+  list-style: none;
+  list-style-type: none;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+  li {
+    list-style: none;
+  }
+}
+
+.instructor__icon {
+  width: 32px;
+  height: auto;
+  fill: $color-tundora;
+  transition: fill 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    &.twitter {
+      fill: $color-twitter;
+    }
+
+    &.youtube {
+      fill: $color-youtube;
+    }
+
+    &.github {
+      fill: lighten($color-tundora, 20%);
+    }
+
+    &.facebook {
+      fill: $color-facebook;
+    }
+
+    &.linkedin {
+      fill: $color-linkedin;
+    }
+  }
+}

@@ -1,64 +1,40 @@
-@mixin font-size-heading1 {
-  font-size: 3rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 3.8rem;
-  }
-
-  @include breakpoint($bp-md) {
-    font-size: 4.5rem;
-  }
-}
-
-@mixin font-size-heading2 {
-  font-size: 3.5rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 3.8rem;
-  }
-}
-
-@mixin font-size-heading3 {
-  font-size: 2.6rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 3rem;
-  }
-}
-
-@mixin font-size-heading4 {
-  font-size: 1.6rem;
-
-  @include breakpoint($bp-xsm) {
-    font-size: 2.4rem;
-  }
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
-  letter-spacing: 0.05rem;
-  margin: 1rem 0;
-  font-family: $font-secondary;
+  font-family: $font-tertiary;
   font-weight: 300;
+  letter-spacing: 0.05rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
 }
 
 h1 {
-  @include font-size-heading1;
+  font-size: 4rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 4.5rem;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 5rem;
+  }
 }
 
 h2 {
-  @include font-size-heading2;
+  font-size: 3rem;
+
+  @include breakpoint($bp-sm) {
+    font-size: 4rem;
+  }
 }
 
 h3 {
-  @include font-size-heading3;
-}
+  font-size: 2.4rem;
 
-h4 {
-  @include font-size-heading4;
+  @include breakpoint($bp-xsm) {
+    font-size: 2.8rem;
+  }
 }

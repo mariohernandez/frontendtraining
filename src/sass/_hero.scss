@@ -1,90 +1,51 @@
 .hero {
-  background: $color-mine-shaft url('../assets/stairs-sm.jpg') 0 0 no-repeat;
-  background-size: cover;
-  padding: 10rem 0 20rem;
-  border-top: 5px solid $color-black;
+  @include divider-border;
   position: relative;
-
-  @include breakpoint($bp-sm) {
-    background: $color-blue url('../assets/stairs-med.jpg') center 0 no-repeat;
-  }
-
-  @include breakpoint($bp-lg) {
-    background: $color-blue url('../assets/stairs.jpg') center 0 no-repeat;
-  }
-
-  .content-container {
-    @include opacity-overlay(0.7);
-    line-height: 0.8;
-  }
-}
-
-.hero__cards {
-  position: absolute;
+  height: 100vh;
 }
 
 .hero__text {
-  color: $color-white;
-  width: 90%;
+  @include vertical-align(absolute);
+  text-align: center;
+  width: 100%;
 }
 
 .hero__heading {
   font-family: $font-tertiary;
-  font-weight: 700;
-  font-size: 3.5rem;
-  letter-spacing: 0.05rem;
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: $zi-low;
+  margin-bottom: 2rem;
 
   span {
     font-size: 2rem;
     display: block;
     font-weight: 300;
+    margin-bottom: 2rem;
 
     @include breakpoint($bp-sm) {
       font-size: 2.5rem;
     }
   }
-
-  @include breakpoint($bp-sm) {
-    font-size: 4rem;
-  }
-
-  @include breakpoint($bp-md) {
-    font-size: 6rem;
-  }
 }
 
 .hero__subheading {
-  font-size: 2rem;
-  font-family: $font-primary;
-  font-style: italic;
-  position: relative;
-  z-index: $zi-low;
-
-  @include breakpoint($bp-sm) {
-    font-size: 2.5rem;
-  }
+  margin-bottom: 4rem;
 }
 
-.hero__cta {
-  margin-top: 1rem;
+.hero__logo {
+  width: calc(80px + 2rem);
+  height: calc(80px + 2rem);
+  margin: 0 auto;
+  background: $color-white;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid $color-blue;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  @media screen and(max-width: $bp-xsm) {
-    .button {
-      padding: 0;
-      background: transparent;
-      color: $color-white;
-      text-decoration: underline;
-    }
-  }
-
-  @include breakpoint($bp-xsm) {
-    margin-top: 3rem;
-  }
-
-  @include breakpoint($bp-sm) {
-    margin-top: 6rem;
+  .hero__icon {
+    fill: $color-blue;
+    width: 8rem;
+    height: auto;
   }
 }

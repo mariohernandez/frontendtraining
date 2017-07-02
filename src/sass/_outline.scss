@@ -21,13 +21,12 @@
   display: block;
   height: 1em;
   width: 100%;
-  background-color: darken($color-alto, 5%);
+  background-color: $color-gallery;
   }
 }
 
 .accordion dd,
 .accordion__panel {
-  background-color: $color-gallery;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -38,12 +37,12 @@
 
 .accordion {
   position: relative;
-  background-color: $color-gallery;
+  background-color: $color-light-gray;
 }
 
 .accordionTitle,
 .accordion__Heading {
-  background-color: lighten($color-alto, 3%);
+  background-color: $color-gallery;
   font-weight: 300;
   padding: 1.8rem 1rem;
   display: flex;
@@ -52,7 +51,7 @@
   text-decoration: none;
   color:  $color-tundora;
   transition: background-color 0.5s ease-in-out;
-  border-bottom: 1px solid darken($color-alto, 5%);
+  border-bottom: 1px solid darken($color-gallery, 5%);
   font-size: 2rem;
 
   @include breakpoint($bp-sm) {
@@ -73,13 +72,13 @@
   }
 
   &:hover {
-    background-color: $color-alto;
+    background-color: darken($color-gallery, 4%);
   }
 }
 
 .accordionTitleActive,
 .accordionTitle.is-expanded {
-  background-color: $color-alto;
+  background-color: darken($color-gallery, 4%);
 
   &:before {
     transform: rotate(-225deg);

@@ -51,8 +51,10 @@ body {
   font-size: 2rem;
   letter-spacing: 0.02em;
   color: $color-tundora;
-  font-family: $font-primary;
-  background: $color-gallery;
+  font-family: $font-tertiary;
+  font-weight: 300;
+  background: $color-white;
+  border-top: 5px solid $color-blue;
 
   @include breakpoint($bp-sm) {
     font-size: 1.8rem;
@@ -141,7 +143,7 @@ a {
 }
 
 p {
-  margin: 0;
+  margin: 0 0 1.5rem;
 }
 
 /**

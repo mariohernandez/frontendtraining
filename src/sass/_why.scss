@@ -1,82 +1,87 @@
 .workshop-why {
+  @include divider-border;
   position: relative;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  // position: relative;
+  // background: $color-tundora;
 }
 
 .workshop-why__info {
-  @include opacity-overlay(0.9, darken($color-blue, 25%));
-  position: relative;
-  line-height: 0.8;
-  min-height: 800px;
-  overflow: hidden;
+  // @include opacity-overlay(0.9, darken($color-blue, 25%));
+  // position: relative;
+  // line-height: 0.8;
+  // min-height: 800px;
+  // overflow: hidden;
 
-  @include breakpoint($bp-xsm) {
-    min-height: 600px;
-  }
+  // @include breakpoint($bp-xsm) {
+  //   min-height: 600px;
+  // }
 
-  @include breakpoint($bp-sm) {
-    min-height: inherit;
-  }
+  // @include breakpoint($bp-sm) {
+  //   min-height: inherit;
+  // }
 }
 
 .workshop-why__text {
-  position: absolute;
-  top: 4rem;
-  width: 90%;
-  left: 5%;
-  color: $color-white;
-  z-index: $zi-low;
-  line-height: 1.8;
+  // position: absolute;
+  // top: 4rem;
+  // width: 90%;
+  // left: 5%;
+  // color: $color-white;
+  // z-index: $zi-low;
+  // line-height: 1.8;
 
   &.content-container {
     margin: 0;
   }
 
-  @include breakpoint($bp-xxsm) {
-    @include vertical-align(absolute);
-  }
+  // @include breakpoint($bp-xxsm) {
+  //   @include vertical-align(absolute);
+  // }
 
-  @include breakpoint($bp-sm) {
-    @include horizontal-align(absolute);
-    top: 10%;
-  }
+  // @include breakpoint($bp-sm) {
+  //   @include horizontal-align(absolute);
+  //   top: 10%;
+  // }
 
-  @include breakpoint($bp-lg) {
-    @include horizontal-align(absolute);
-    top: 25%;
-  }
+  // @include breakpoint($bp-lg) {
+  //   @include horizontal-align(absolute);
+  //   top: 25%;
+  // }
   p {
     font-size: 2rem;
   }
 }
 
-.workshop-why__text--inner {
-
-  @include breakpoint($bp-sm) {
-    display: flex;
-  }
+.workshop-why__heading {
+  text-align: center;
+  // @include breakpoint($bp-sm) {
+  //   display: flex;
+  // }
 }
 
-.text-only {
-  @include breakpoint($bp-sm) {
-    padding-right: 6rem;
-  }
-}
+// .text-only {
+//   @include breakpoint($bp-sm) {
+//     padding-right: 6rem;
+//   }
+// }
 
-.icon-only {
-  display: none;
+// .icon-only {
+//   display: none;
 
-  @include breakpoint($bp-sm) {
-    display: flex;
-    align-items: center;
-  }
-}
+//   @include breakpoint($bp-sm) {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
 
-.description__icon {
-  fill: $color-white;
+// .description__icon {
+//   fill: $color-white;
 
-  @include breakpoint($bp-sm) {
-    height: 120px;
-    width: auto;
-    margin-left: auto;
-  }
-}
+//   @include breakpoint($bp-sm) {
+//     height: 120px;
+//     width: auto;
+//     margin-left: auto;
+//   }
+// }

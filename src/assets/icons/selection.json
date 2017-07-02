@@ -4,8 +4,37 @@
     {
       "icon": {
         "paths": [
+          "M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 832h-128v-448h128v448zM320 320c-35.4 0-64-28.6-64-64s28.6-64 64-64c35.4 0 64 28.6 64 64s-28.6 64-64 64zM832 832h-128v-256c0-35.4-28.6-64-64-64s-64 28.6-64 64v256h-128v-448h128v79.4c26.4-36.2 66.8-79.4 112-79.4 79.6 0 144 71.6 144 160v288z"
+        ],
+        "tags": [
+          "linkedin",
+          "brand",
+          "social"
+        ],
+        "defaultCode": 60105,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "linkedin, brand64",
+        "name": "linkedin",
+        "order": 15,
+        "id": 13,
+        "prevSize": 64
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M0 64v640h1024v-640h-1024zM960 640h-896v-512h896v512zM672 768h-320l-32 128-64 64h512l-64-64z"
         ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "tags": [
           "display",
           "screen",
@@ -15,45 +44,46 @@
           "pc"
         ],
         "defaultCode": 59734,
-        "grid": 16,
-        "attrs": []
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "ligatures": "display, screen",
         "name": "display",
-        "order": 32,
-        "id": 13,
+        "order": 16,
+        "id": 0,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 0
+      "setId": 2,
+      "iconIdx": 1
     },
     {
       "icon": {
         "paths": [
           "M152.388 48.522l-34.36 171.926h699.748l-21.884 111.054h-700.188l-33.892 171.898h699.684l-39.018 196.064-282.012 93.422-244.4-93.422 16.728-85.042h-171.898l-40.896 206.352 404.226 154.704 466.006-154.704 153.768-772.252z"
         ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "tags": [
           "css3",
           "w3c"
         ],
         "defaultCode": 60134,
-        "grid": 16,
-        "attrs": []
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "ligatures": "css3, w3c3",
         "name": "css",
-        "order": 33,
-        "id": 14,
+        "order": 17,
+        "id": 1,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
-      "iconIdx": 1
+      "setId": 2,
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -77,12 +107,12 @@
       "properties": {
         "ligatures": "meter, gauge",
         "name": "meter",
-        "order": 35,
-        "id": 16,
+        "order": 18,
+        "id": 2,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 3
     },
     {
@@ -105,12 +135,12 @@
       "properties": {
         "ligatures": "tree, branches",
         "name": "tree",
-        "order": 36,
-        "id": 17,
+        "order": 19,
+        "id": 3,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 4
     },
     {
@@ -137,12 +167,12 @@
       "properties": {
         "ligatures": "embed2, code2",
         "name": "embed",
-        "order": 37,
-        "id": 18,
+        "order": 20,
+        "id": 4,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 5
     },
     {
@@ -166,12 +196,12 @@
       "properties": {
         "ligatures": "terminal, console",
         "name": "terminal",
-        "order": 38,
-        "id": 19,
+        "order": 21,
+        "id": 5,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 6
     },
     {
@@ -194,12 +224,12 @@
       "properties": {
         "ligatures": "facebook2, brand11",
         "name": "facebook",
-        "order": 39,
-        "id": 20,
+        "order": 22,
+        "id": 6,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 7
     },
     {
@@ -223,12 +253,12 @@
       "properties": {
         "ligatures": "twitter, brand16",
         "name": "twitter",
-        "order": 40,
-        "id": 21,
+        "order": 23,
+        "id": 7,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 8
     },
     {
@@ -251,12 +281,12 @@
       "properties": {
         "ligatures": "youtube, brand21",
         "name": "youtube",
-        "order": 41,
-        "id": 22,
+        "order": 24,
+        "id": 8,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 9
     },
     {
@@ -280,12 +310,12 @@
       "properties": {
         "ligatures": "github, brand40",
         "name": "github",
-        "order": 42,
-        "id": 23,
+        "order": 25,
+        "id": 9,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 10
     },
     {
@@ -307,12 +337,12 @@
       "properties": {
         "ligatures": "html-five, w3c",
         "name": "html-five",
-        "order": 43,
-        "id": 24,
+        "order": 26,
+        "id": 10,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 11
     },
     {
@@ -334,12 +364,12 @@
       "properties": {
         "ligatures": "stack, layers",
         "name": "stack",
-        "order": 44,
-        "id": 25,
+        "order": 27,
+        "id": 11,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 12
     },
     {
@@ -347,25 +377,27 @@
         "paths": [
           "M736 0h-448c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h448c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 48h256v32h-256v-32zM512 960c-35.346 0-64-28.654-64-64s28.654-64 64-64 64 28.654 64 64-28.654 64-64 64zM768 768h-512v-640h512v640z"
         ],
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "tags": [
           "mobile",
           "cell-phone",
           "handheld"
         ],
         "defaultCode": 59736,
-        "grid": 16,
-        "attrs": []
+        "grid": 16
       },
       "attrs": [],
       "properties": {
         "ligatures": "mobile, cell-phone",
         "name": "mobile",
-        "order": 45,
-        "id": 26,
+        "order": 28,
+        "id": 12,
         "prevSize": 64
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 2,
       "iconIdx": 13
     }
   ],

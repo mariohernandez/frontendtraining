@@ -21,28 +21,33 @@
     <main class="site-content" role="main">
 
       <!-- Hero section -->
-      <section class="hero">
-        <div class="hero__text content-container">
+      <section class="hero content-container">
+        <div class="hero__text">
           <h1 class="hero__heading"><span>Become a</span>Front-End Web Developer</h1>
           <p class="hero__subheading">Learn to build modern websites</p>
+          <div class="hero__logo">
+            <svg class="hero__icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path d="M26.308 29.12a.8.8 0 0 1-.61-.283.796.796 0 0 1 .099-1.12l9.171-7.69-9.227-7.741a.795.795 0 0 1 1.023-1.218l9.953 8.352a.792.792 0 0 1-.002 1.216l-9.896 8.297a.787.787 0 0 1-.511.187zm-12.615 0a.781.781 0 0 1-.511-.187l-9.897-8.299a.793.793 0 0 1-.001-1.216l9.953-8.352a.795.795 0 1 1 1.022 1.218l-9.227 7.741 9.171 7.69a.796.796 0 0 1-.51 1.405zm4.211 0a.796.796 0 0 1-.773-.986l4.138-16.649a.793.793 0 0 1 .963-.581.797.797 0 0 1 .58.965l-4.138 16.649a.791.791 0 0 1-.77.602z"/></svg>
+          </div>
         </div>
       </section>
 
+      <div class="divider-border"></div>
+
       <section class="course-intro">
-        <div class="course-intro__logo">
-          <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" width="80" height="64" viewBox="0 0 80 64"><title>Become a front-end web developer</title><path d="M52 46l6 6 20-20-20-20-6 6 14 14zM28 18l-6-6L2 32l20 20 6-6-14-14zm15.831-8.593l4.342 1.184-11.999 44.002-4.342-1.184L43.831 9.407z"/></svg>
-        </div>
-        <h1 class="course-intro__heading">How this course can help you</h1>
+        <h2 class="course-intro__heading">How this course can help you</h2>
         <div class="course-intro__intro">
           <p>Whether you are just getting started as a developer or want to take your development skills to the next level, this course will expose you and teach you the hosttest technologies essential to today's front-end developers.  Best practices and web standards are at the core of every topic.</p>
-          <p>If you are interested in learning Responsive Design, HTML, CSS, Javascript and other essential skills, this is the course for you.</p>
+          <p>With over 10 years the experience as a front-end developer, I have hand-picked the topics that will help you become successful.  We will not spend time in non-relevant topics.</p>
         </div>
       </section>
 
       <section class="technologies">
         <div class="content-container">
-          <h2 class="technologies__heading">Learn the skills that matter</h2>
-          <p>Modern web development has become a complicated mix of fast-moving technologies. The challenge for developers is trying to keep up with the latest changes. How do you find and learn about the best tools and techniques? And even after we've learned a new tool, it can feel like our skills are soon out-dated.</p>
+          <div class="technologies__intro">
+            <h2 class="technologies__heading">Learn the skills that matter</h2>
+            <p>Modern web development has become a complicated mix of fast-moving technologies. The challenge for developers is trying to keep up with the latest changes. How do you find and learn about the best tools and techniques? And even after we've learned a new tool, it can feel like our skills are soon out-dated.</p>
+            <p>This is a hands-on workshop that will ensure you are exposed to the challenges and techniques we face every day as a developer.  You will be tolled with resources that help you stay on top of latest trends and standards.</p>
+          </div>
         <div class="card__items">
           <article class="card__item card__item--blue">
             <div class="card__content">
@@ -97,7 +102,7 @@
         <div class="content-container">
           <div class="container">
             <h2 class="outline__heading">Topics you will learn</h2>
-            <p>The workshop is devided in 3 levels:  Level 1 = Beginers, Level 2 = Intermediate and Level 3 = Advanced.  Each level picks up where we left off in the previous level to continue to build on the skills we just learned.</p>
+            <p>The workshop starts with the basics of web design and progressively graduates to intermediate and advanced techniques.  Each next level picks up where we left off and with the help of excircises during the course of the workshop, you will be able to put into practice what you are learning.  At the end of the workshop you will have built a fully functional website.</p>
             <div class="accordion">
               <dl>
                 <dt>
@@ -189,19 +194,66 @@
       </section>
 
       <!-- Why this workshop -->
-      <section class="workshop-why">
-        <div class="workshop-why__info">
-          <picture>
+      <section class="workshop-why content-container">
+        <!-- <div class="workshop-why__info"> -->
+<!--           <picture>
             <source media="all and (min-width: 1024px)" srcset="dist/assets/code.jpg">
             <source media="all and (min-width: 640px)" srcset="dist/assets/code-med.jpg">
             <source media="all and (min-width: 1px)" srcset="dist/assets/code-small.jpg">
             <img src="dist/assets/code-med.jpg" alt="Hero with background image">
-          </picture>
-          <div class="workshop-why__text content-container">
-            <h2>What makes this workshop different from the rest?</h2>
+          </picture> -->
+          <div class="workshop-why__text ">
+            <h2 class="workshop-why__heading">What makes this workshop different from the rest?</h2>
             <p>This workshop's main focus is to make you the best front-end developer you can be.  Other workshops teach you a lot but without a clear goal.  In today's web development environment there is clear separation between designers, front-end and back-end developers.  It's typical for agencies or companies to hire developers of specific discipline.</p>
 
             <p>Although you can be a full stack developer, it is extremely difficult to stay on top of the lastest trends for more than a one role at a time.</p>
+          </div>
+        <!-- </div> -->
+      </section>
+
+      <!-- Instructor -->
+      <section class="instructor content-container">
+        <h2 class="instructor__heading">About the instructor</h2>
+        <div class="instructor__card">
+          <div class="instructor__images">
+            <div class="instructor__bg-image">
+              <img src="dist/assets/instructor-bg.jpg" alt="Image of text editor with code">
+            </div>
+            <img class="instructor__headshot" src="dist/assets/mario-hernandez.jpg" alt="Mario Hernandez, Front-End Web Developer">
+          </div>
+          <div class="instructor__card--text">
+            <p class="instructor__name">Mario Hernandez</p>
+            <p>I am a Front-End Developer with over 15 years experience from Los Angeles.  I speak at tech conferences and conduct private and public-sponsored training workshops.</p>
+            <span class="instructor__connect">
+              Connect with me
+            </span>
+            <ul class="instructor__social">
+              <li class="instructor__social--item">
+                <a href="https://twitter.com/imariohernandez" class="social-icon__link" target="_blank">
+                  <svg class="instructor__icon twitter" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>twitter</title><path d="M64 14.15a25.883 25.883 0 0 1-7.538 2.062 13.205 13.205 0 0 0 5.775-7.262c-2.538 1.5-5.35 2.6-8.337 3.188A13.132 13.132 0 0 0 44.313 8c-7.25 0-13.125 5.875-13.125 13.125 0 1.025.113 2.025.337 2.988-10.913-.55-20.587-5.775-27.063-13.725a13.13 13.13 0 0 0-1.775 6.6c0 4.55 2.312 8.575 5.838 10.925a13.162 13.162 0 0 1-5.95-1.637v.163c0 6.363 4.525 11.675 10.537 12.875-1.1.3-2.262.462-3.463.462-.85 0-1.662-.087-2.475-.237 1.675 5.212 6.525 9.012 12.262 9.125a26.335 26.335 0 0 1-16.313 5.625c-1.063 0-2.1-.063-3.138-.188a37.143 37.143 0 0 0 20.137 5.9c24.15 0 37.362-20.013 37.362-37.362 0-.575-.013-1.137-.038-1.7a26.411 26.411 0 0 0 6.55-6.787z"/></svg>
+                </a>
+              </li>
+              <li class="instructor__social--item">
+                <a href="https://www.youtube.com/user/marequi" class="social-icon__link" target="_blank">
+                  <svg class="instructor__icon youtube" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>youtube</title><path d="M63.362 19.2s-.625-4.412-2.55-6.35c-2.438-2.55-5.163-2.563-6.413-2.713-8.95-.65-22.387-.65-22.387-.65h-.025s-13.438 0-22.387.65c-1.25.15-3.975.162-6.412 2.713C1.263 14.788.65 19.2.65 19.2S.013 24.375.013 29.563v4.85c0 5.175.637 10.363.637 10.363s.625 4.413 2.538 6.35c2.438 2.55 5.638 2.462 7.063 2.737 5.125.487 21.762.638 21.762.638s13.45-.025 22.4-.663c1.25-.15 3.975-.163 6.413-2.712 1.925-1.938 2.55-6.35 2.55-6.35s.638-5.175.638-10.362v-4.85c-.013-5.175-.65-10.363-.65-10.363zM25.387 40.3V22.312l17.287 9.025-17.288 8.962z"/></svg>
+                  </a>
+              </li>
+              <li class="instructor__social--item">
+                <a href="https://github.com/mariohernandez" class="social-icon__link" target="_blank">
+                  <svg class="instructor__icon github" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>github</title><path d="M32.001.79C14.33.79 0 15.116 0 32.79c0 14.138 9.169 26.133 21.884 30.365 1.599.296 2.187-.694 2.187-1.539 0-.763-.03-3.284-.044-5.958-8.903 1.936-10.781-3.776-10.781-3.776-1.455-3.699-3.553-4.682-3.553-4.682-2.903-1.986.219-1.945.219-1.945 3.213.226 4.905 3.298 4.905 3.298 2.855 4.892 7.486 3.477 9.313 2.66.287-2.068 1.116-3.48 2.032-4.279-7.108-.809-14.58-3.553-14.58-15.815 0-3.494 1.25-6.348 3.297-8.589-.332-.806-1.428-4.061.309-8.469 0 0 2.688-.86 8.802 3.281 2.552-.709 5.29-1.065 8.01-1.077 2.719.012 5.459.368 8.016 1.077 6.108-4.14 8.791-3.281 8.791-3.281 1.742 4.408.647 7.663.315 8.469 2.051 2.241 3.293 5.096 3.293 8.589 0 12.291-7.486 14.997-14.612 15.789 1.148.993 2.17 2.94 2.17 5.926 0 4.282-.037 7.728-.037 8.782 0 .852.576 1.85 2.198 1.535 12.708-4.236 21.865-16.227 21.865-30.361 0-17.674-14.327-32-32-32z"/></svg>
+                  </a>
+              </li>
+              <li class="instructor__social--item">
+                <a href="https://www.facebook.com/mariohernandez" class="social-icon__link" target="_blank">
+                  <svg class="instructor__icon facebook" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>facebook</title><path d="M58 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h26V36h-8v-8h8v-4c0-6.613 5.388-12 12-12h8v8h-8c-2.2 0-4 1.8-4 4v4h12l-2 8H40v28h18c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z"/></svg>
+                  </a>
+              </li>
+              <li class="instructor__social--item">
+                <a href="https://www.linkedin.com/in/mariorhernandez" class="social-icon__link" target="_blank">
+                  <svg class="instructor__icon linkedin" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>linkedin</title><path d="M58 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h52c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6zM24 52h-8V24h8v28zm-4-32c-2.212 0-4-1.788-4-4s1.788-4 4-4c2.212 0 4 1.787 4 4s-1.788 4-4 4zm32 32h-8V36c0-2.212-1.788-4-4-4s-4 1.788-4 4v16h-8V24h8v4.962C37.65 26.7 40.175 24 43 24c4.975 0 9 4.475 9 10v18z"/></svg>
+                  </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
