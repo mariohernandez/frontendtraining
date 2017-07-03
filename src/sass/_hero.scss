@@ -2,6 +2,10 @@
   @include divider-border;
   position: relative;
   height: 100vh;
+
+  &.content-container {
+    padding-top: 2rem;
+  }
 }
 
 .hero__text {

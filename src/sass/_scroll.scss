@@ -1,0 +1,20 @@
+.scroll-up {
+  width: calc(100% - 1rem);
+  padding-right: 1rem;
+  display: block;
+  text-align: right;
+  margin-bottom: 2rem;
+
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: $color-tundora;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+}

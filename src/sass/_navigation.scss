@@ -1,0 +1,25 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  height: 5rem;
+
+  @include breakpoint($bp-sm) {
+    justify-content: flex-end;
+  }
+}
+
+.navigation__item {
+  list-style: none;
+
+  @include breakpoint($bp-sm) {
+    margin-left: 2.5rem;
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: $color-gray-nevada;
+  font-size: 1.5rem;
+}
