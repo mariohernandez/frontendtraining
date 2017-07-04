@@ -560,6 +560,7 @@ li {
     font-size: 1.5rem; }
 
 .hero {
+  background: #222222;
   position: relative;
   height: 100vh; }
   .hero::before {
@@ -585,7 +586,8 @@ li {
 
 .hero__heading {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #DDDDDD; }
   .hero__heading span {
     font-size: 2rem;
     display: block;
@@ -596,16 +598,17 @@ li {
         font-size: 2.5rem; } }
 
 .hero__subheading {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  color: #DDDDDD; }
 
 .hero__logo {
-  width: calc(80px + 2rem);
-  height: calc(80px + 2rem);
+  width: calc(70px + 2rem);
+  height: calc(70px + 2rem);
   margin: 0 auto;
-  background: #FFFFFF;
+  background: transparent;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #009ED6;
+  border: 1px solid #697176;
   padding: 1rem;
   display: -ms-flexbox;
   display: flex;
@@ -614,8 +617,8 @@ li {
   -ms-flex-pack: center;
   justify-content: center; }
   .hero__logo .hero__icon {
-    fill: #009ED6;
-    width: 8rem;
+    fill: #697176;
+    width: 6rem;
     height: auto; }
 
 .instructor {
@@ -739,7 +742,10 @@ li {
 .navigation__link {
   text-decoration: none;
   color: #697176;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out; }
+  .navigation__link:hover, .navigation__link:focus {
+    color: #EEEEEE; }
 
 .outline__heading {
   text-align: center;
