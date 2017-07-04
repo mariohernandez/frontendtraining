@@ -1,7 +1,5 @@
 .hero {
-  @include divider-border;
   background: $color-mine-shaft;
-  position: relative;
   height: 100vh;
 
   &.content-container {
